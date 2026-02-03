@@ -1,0 +1,123 @@
+.shop-by-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--white);
+}
+.shop-by-section {
+  padding: clamp(30px, 6vw, 64px) 18px;
+  padding-bottom: clamp(250px, 25vw, 500px);
+}
+.shop-by-container {
+  max-width: 1318px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.shop-by-title {
+  width: 100%;
+  text-align: left;
+}
+.shop-by-title h2 {
+  line-height: 48px;
+  color: var(--black);
+}
+.concerns-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 110px 50px;
+}
+.concern-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.concern-circle {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.concern-image {
+  position: absolute;
+}
+.concern-name {
+  margin-top: 12px;
+  color: var(--black);
+  text-align: center;
+  white-space: pre-line;
+}
+.img-0 {
+  transform: translate(-8px, -24px);
+}
+.img-1 {
+  transform: translate(-8px, -37px);
+}
+.img-2 {
+  transform: translate(8px, -35px);
+}
+.img-3 {
+  transform: translate(-9px, -9px);
+}
+.img-4 {
+  transform: translateY(-24px);
+}
+.img-5 {
+  transform: translateY(-32px);
+}
+.img-6 {
+  transform: translateY(-36px);
+}
+.img-7 {
+  transform: translate(0px, -25px);
+}
+.img-8 {
+  transform: translate(-3px, -22px);
+}
+.img-9 {
+  transform: translate(-5px, -30px);
+}
+.img-10 {
+  transform: translate(7px, 5px);
+}
+.img-11 {
+  transform: translate(-3px, -4px);
+}
+/* Responsive */
+@media (max-width: 992px) {
+  .shop-by-title h2 {
+    font-size: 32px;
+  }
+  .concern-circle {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .shop-by-title h2 {
+    font-size: 28px;
+  }
+  .concern-circle {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (max-width: 480px) {
+  .shop-by-title h2 {
+    font-size: 24px;
+  }
+  .concern-circle {
+    width: 110px;
+    height: 110px;
+  }
+  .concern-image {
+    max-width: 70%;
+  }
+}

@@ -1,0 +1,80 @@
+.registration-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.registration-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+.registration-box {
+  width: 100%;
+  max-width: 466px;
+}
+.registration-logo {
+  margin-bottom: 10px;
+  width: 240px;
+  height: 70px;
+}
+.registration-title {
+  max-width: 363px;
+  margin-bottom: 8px;
+}
+.registration-subtitle {
+  margin-bottom: 24px;
+}
+.registration-mobile-section {
+  margin-bottom: 32px;
+}
+.registration-mobile-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0;
+}
+.full-width {
+  width: 100%;
+}
+.registration-note {
+  color: var(--grey);
+  margin-top: 30px;
+  line-height: 1.4;
+  text-align: center;
+}
+.registration-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.registration-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 900px) {
+  .registration-container {
+    flex-direction: column;
+    text-align: left;
+  }
+  .registration-right {
+    height: auto;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .registration-image {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 320px) {
+  .registration-logo {
+    width: 180px;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+}
