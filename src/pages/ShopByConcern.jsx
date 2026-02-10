@@ -25,7 +25,7 @@ const ShopByConcern = () => {
     { name: 'Fever', image: feverImg, imageClass: 'img-4' },
     { name: 'Diabetes\nCare', image: diabetesImg, imageClass: 'img-5' },
     { name: 'Cold &\nCough', image: coldImg, imageClass: 'img-6' },
-    { name: 'Allergies', image: allergiesImg , imageClass: 'img-7' },
+    { name: 'Allergies', image: allergiesImg, imageClass: 'img-7' },
     { name: 'Blood\nPressure', image: bloodImg, imageClass: 'img-8' },
     { name: 'Skin Care', image: skinCareImg, imageClass: 'img-9' },
     { name: 'Immunity\nBoost', image: immunityImg, imageClass: 'img-10' },
@@ -34,7 +34,7 @@ const ShopByConcern = () => {
   return (
     <div className="shop-by-page">
       <Header />
-        <Breadcrumbs
+      <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
           { label: "Concerns" },
@@ -53,7 +53,7 @@ const ShopByConcern = () => {
                 key={index}
                 name={item.name}
                 image={item.image}
-                imageClass={item.imageClass} 
+                imageClass={item.imageClass}
               />
             ))}
           </div>

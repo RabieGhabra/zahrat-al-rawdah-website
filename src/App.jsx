@@ -6,10 +6,9 @@ import Home from './pages/Home/Home.jsx';
 import ShopByConcern from './pages/ShopByConcern.jsx';
 import ProductListing from './pages/ProductListing_page/ProductListing.jsx';
 import ScrollToTop from "./components/ScrollToTop";
-
 function App() {
   return (
-    <Router.BrowserRouter basename="/zahrat-al-rawdah-website">
+    <>
       <ScrollToTop />
       <Router.Routes>
         <Router.Route path="/" element={<Home />} />
@@ -19,9 +18,8 @@ function App() {
         <Router.Route path="/ShopByConcern" element={<ShopByConcern />} />
         <Router.Route path="/ProductListing" element={<ProductListing />} />
       </Router.Routes>
-    </Router.BrowserRouter>
+    </>
   );
 }
-
 export default App;
 
