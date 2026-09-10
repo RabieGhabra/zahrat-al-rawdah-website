@@ -36,7 +36,7 @@ const ShopByConcern = () => {
       <Header />
       <Breadcrumbs
         items={[
-          { label: "Home", href: "/" },
+          { label: "Home", href: import.meta.env.BASE_URL },
           { label: "Concerns" },
         ]}
       />
