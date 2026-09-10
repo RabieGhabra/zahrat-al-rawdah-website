@@ -1,0 +1,165 @@
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 775px;
+}
+.hero-bg,
+.hero-rotated {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+}
+.hero-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-gradient {
+  position: absolute;
+  top: 560px;
+  left: -16px;
+  right: 0;
+  height: 335px;
+  background: linear-gradient(
+    173.92deg,
+    rgba(255, 255, 255, 0) 28.63%,
+    rgba(255, 255, 255, 0.3) 79.85%
+  );
+  backdrop-filter: blur(4px);
+}
+.hero-rotated {
+  top: 0;
+  right: -100px;
+  width: 1146px;
+  height: 581px;
+}
+.hero-content {
+  position: absolute;
+  left: 295px;
+  top: 591px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--black);
+}
+.hero-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.star-large {
+  width: 16px;
+  height: 16px;
+}
+.star-small {
+  width: 8px;
+  height: 8px;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 0;
+  text-align: left;
+}
+.hero-text p {
+  max-width: 490px;
+  line-height: 22px;
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  .hero-section {
+    min-height: 700px;
+  }
+  .hero-content {
+    left: 150px;
+    top: 480px;
+  }
+  .hero-text h1 {
+    font-size: 40px;
+  }
+  .hero-text p {
+    max-width: 400px;
+  }
+  .hero-gradient {
+    top: 450px;
+    height: 250px;
+  }
+  .hero-rotated {
+    right: -150px;
+    width: 900px;
+    height: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 550px;
+  }
+  .hero-content {
+    left: 80px;
+    top: 380px;
+    gap: 12px;
+  }
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .hero-text p {
+    max-width: 350px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .hero-gradient {
+    top: 350px;
+    height: 200px;
+    left: 0;
+  }
+  .hero-rotated {
+    right: -200px;
+    width: 700px;
+    height: 350px;
+  }
+  .star-large {
+    width: 14px;
+    height: 14px;
+  }
+  .star-small {
+    width: 7px;
+    height: 7px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 450px;
+  }
+  .hero-content {
+    left: 20px;
+    top: 280px;
+    gap: 8px;
+  }
+  .hero-text h1 {
+    font-size: 24px;
+  }
+  .hero-text p {
+    max-width: 280px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .hero-gradient {
+    top: 268px;
+    left: 0;
+  }
+  .hero-rotated {
+    display: none;
+  }
+  .star-large {
+    width: 12px;
+    height: 12px;
+  }
+  .star-small {
+    width: 6px;
+    height: 6px;
+  }
+}

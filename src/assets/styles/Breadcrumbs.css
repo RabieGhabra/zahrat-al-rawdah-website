@@ -1,0 +1,19 @@
+.breadcrumbs-section {
+  width: 100%;
+  background-color: #e0ebf5;
+  padding: 12px 0;
+}
+.breadcrumbs-container {
+  margin: 0 auto;
+  padding: 0 48px;
+  color: var(--black);
+}
+.breadcrumbs-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.breadcrumbs-link {
+  text-decoration: none;
+  color: var(--black);
+}

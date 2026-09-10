@@ -1,0 +1,27 @@
+.nav-section {
+  width: 100%;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  padding: 32px 48px;
+}
+.nav-items {
+  display: flex;
+  gap: 64px;
+}
+.nav-item {
+  white-space: nowrap;
+  color: var(--black);
+}
+.nav-item.active {
+  border-bottom: 2px solid black;
+  padding-bottom: 0px;
+  align-self: flex-start;
+}
+@media (max-width: 1360px) {
+  .nav-items {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
